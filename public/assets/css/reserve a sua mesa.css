@@ -1,0 +1,138 @@
+#contact.page {
+    flex-direction: column;
+}
+
+#contact.page header {
+    height: 10vw;
+    background-image: url("/public/assets/images/mesa2.jpg");
+    background-size: cover;
+    background-position: center;
+    /* filter: brightness(0.5); */
+    color: var(--white);
+}
+
+.tituloR {
+    color: var(--white);
+    text-align: center;
+    
+}
+.tituloR a {
+    text-decoration: none;
+}
+
+.Cformulario {
+    padding: 30px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.Cformulario p {
+    width: 100%;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.Cfield {
+    width: 100%;
+    margin: 5px 0;
+    align-items: center;
+}
+
+.Cfield label {
+    padding-left: 10px;
+    font-size: 1.1em;
+    width: 150px;
+}
+
+input[type=text], input[type=date], input[type=time], input[type=tel], textarea, select {
+    width: 100%;
+    padding-left: 10px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--light-red);
+    border: 1px solid var(--black);
+    outline: none;
+    color: var(--white);
+}
+
+textarea {
+    line-height: 20px;
+    padding: 10px;
+    height: 90px;
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    color: var(--black);
+    margin: 5px 0;
+}
+
+form button {
+    display: block;
+    background-color: var(--grey);
+    color: var(--black);
+    height: 35px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 150px;
+    margin: 15px auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.Cimg {
+    display: none;
+}
+
+@media (min-width:576px) {
+    .Cimg {
+        background-image: url(/public/assets/images/mesa.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .Cimg {
+        display: flex;
+        width: 40vw;
+        margin-top: 1px;
+        flex: 1;
+        overflow: hidden;
+    }
+    .Csection {
+        display: flex;
+        flex-direction: row;
+        max-height: 550px;
+    }
+}
+
+@media (min-width: 992px) {
+    .Cformulario {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 5px;
+        position: relative;
+    }
+    .Cformulario p {
+        width: 70%;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    .Cfield {
+        width: 100%;
+        margin: 5px 0;
+        align-items: center;
+    }
+    .Cfield label {
+        padding-left: 10px;
+        font-size: 1.1em;
+        width: 150px;
+    }
+    .Cimg {
+       
+        flex-direction: row-reverse;
+        
+    }
+}
