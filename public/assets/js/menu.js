@@ -5,6 +5,7 @@ const menu = document.querySelector('.menu-navigation');
 
 hamburguer.addEventListener('click', ()=>{
         menu.classList.toggle("spread")
+        
 })
 
 window.addEventListener('click', e=> {

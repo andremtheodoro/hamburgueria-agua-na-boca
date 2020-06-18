@@ -2,23 +2,10 @@
     flex-direction: column;
 }
 
-#contact.page header {
-    height: 10vw;
-    background-image: url("/public/assets/images/mesa2.jpg");
-    background-size: cover;
-    background-position: center;
-    /* filter: brightness(0.5); */
-    color: var(--white);
-}
-
-.tituloR {
-    color: var(--white);
-    text-align: center;
-    
-}
-.tituloR a {
-    text-decoration: none;
-}
+.Cformulario:hover {
+    background: #1C1C1C;
+    color: #f2f2f2;
+} 
 
 .Cformulario {
     padding: 30px;
@@ -26,6 +13,9 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    
+    
+    
 }
 
 .Cformulario p {
@@ -33,6 +23,7 @@
     font-size: 1.5em;
     font-weight: bold;
     color: var(--black);
+    text-align: center;
 }
 
 .Cfield {
@@ -85,6 +76,42 @@ form button {
 
 .Cimg {
     display: none;
+}
+.image-light {
+    position: fixed;
+    background: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+.show {
+    transform: translate(0);
+}
+
+.add-image {
+    width: 60%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+}
+
+.showImage {
+    transform: scale(1);
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
 }
 
 @media (min-width:576px) {

@@ -26,10 +26,10 @@
     top: 30px;
     right: 30px;
     background: #b2bec3;
-    width: 43px;
-    height: 41px;
+    width: 52px;
+    height: 55px;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 0 0 6px rgba(0, 0, blue, alpha);
 }
 
@@ -37,7 +37,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 30vw;
+    width: 35vw;
     height: 100%;
     background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
     display: flex;
@@ -59,13 +59,15 @@
 }
 
 .titulo {
-    font-size: 60px;
+    text-align: center;
+    font-size: 50px;
     margin-bottom: 15px;
     color: #000000;
 }
 
 .titulo2 {
+    text-align: center;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 1.5em;
     color: #000000;
 }
